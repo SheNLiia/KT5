@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OrderItem</class>
+ <widget class="QFrame" name="frame_order">
+
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>120</height>
+   </rect>
+  </property>
+
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+
+  <layout class="QHBoxLayout" name="horizontalLayout">
+
+   <!-- Левая часть информации -->
+
+   <item>
+    <widget class="QFrame" name="frame_info">
+
+     <layout class="QVBoxLayout" name="verticalLayout">
+
+      <item>
+       <widget class="QLabel" name="label_order_id">
+        <property name="text">
+         <string>Артикул заказа</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QLabel" name="label_status">
+        <property name="text">
+         <string>Статус заказа</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QLabel" name="label_address">
+        <property name="text">
+         <string>Адрес пункта выдачи</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QLabel" name="label_order_date">
+        <property name="text">
+         <string>Дата заказа</string>
+        </property>
+       </widget>
+      </item>
+
+     </layout>
+
+    </widget>
+   </item>
+
+   <!-- Правая часть дата выдачи -->
+
+   <item>
+    <widget class="QFrame" name="frame_issue_date">
+
+     <property name="minimumSize">
+      <size>
+       <width>140</width>
+       <height>0</height>
+      </size>
+     </property>
+
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+
+      <item>
+       <widget class="QLabel" name="label_issue_date">
+
+        <property name="text">
+         <string>Дата выдачи</string>
+        </property>
+
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+
+       </widget>
+      </item>
+
+     </layout>
+
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+
+ <resources/>
+ <connections/>
+</ui>

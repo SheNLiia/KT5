@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProductItem</class>
+ <widget class="QFrame" name="frame_product">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>140</height>
+   </rect>
+  </property>
+
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+
+  <layout class="QHBoxLayout" name="horizontalLayout">
+
+   <!-- Блок фото -->
+
+   <item>
+    <widget class="QFrame" name="frame_photo">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>0</height>
+      </size>
+     </property>
+
+     <layout class="QVBoxLayout" name="verticalLayout_photo">
+
+      <item>
+       <widget class="QLabel" name="label_image">
+
+        <property name="text">
+         <string>Фото</string>
+        </property>
+
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+
+       </widget>
+      </item>
+
+     </layout>
+
+    </widget>
+   </item>
+
+   <!-- Блок информации -->
+
+   <item>
+    <widget class="QFrame" name="frame_info">
+
+     <layout class="QVBoxLayout" name="verticalLayout_info">
+
+      <item>
+       <widget class="QLabel" name="label_title">
+        <property name="text">
+         <string>Категория | Название товара</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QLabel" name="label_description">
+        <property name="text">
+         <string>Описание товара</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QLabel" name="label_manufacturer">
+        <property name="text">
+         <string>Производитель</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QLabel" name="label_supplier">
+        <property name="text">
+         <string>Поставщик</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QLabel" name="label_price">
+        <property name="text">
+         <string>Цена</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QLabel" name="label_unit">
+        <property name="text">
+         <string>Единица измерения</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QLabel" name="label_stock">
+        <property name="text">
+         <string>Количество на складе</string>
+        </property>
+       </widget>
+      </item>
+
+     </layout>
+
+    </widget>
+   </item>
+
+   <!-- Блок скидки -->
+
+   <item>
+    <widget class="QFrame" name="frame_discount">
+
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>0</height>
+      </size>
+     </property>
+
+     <layout class="QVBoxLayout" name="verticalLayout_discount">
+
+      <item>
+       <widget class="QLabel" name="label_discount">
+
+        <property name="text">
+         <string>Действующая
+скидка</string>
+        </property>
+
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+
+       </widget>
+      </item>
+
+     </layout>
+
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+
+ <resources/>
+ <connections/>
+</ui>
